@@ -66,6 +66,8 @@ Les Clients à risque contribuent faiblement au chiffre d’affaires et nécessi
 
 La segmentation RFM constitue une base pertinente pour des actions marketing ciblées.
 
+Cette analyse fournit une base décisionnelle exploitable pour orienter des actions marketing, de fidélisation et d’optimisation de la valeur client.
+
 📊 Dashboard Power BI
 
 Un dashboard Power BI a été réalisé pour faciliter la lecture métier :
@@ -102,6 +104,8 @@ Cette étape permet de valider les indicateurs métiers directement au niveau de
 Python (pandas, numpy)
 
 Jupyter Notebook (via Visual Studo Code)
+
+SQL (SQLite)
 
 Power BI Desktop
 
