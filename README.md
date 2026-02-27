@@ -103,7 +103,7 @@ Cette étape permet de valider les indicateurs métiers directement au niveau de
 
 Python (pandas, numpy)
 
-Jupyter Notebook (via Visual Studo Code)
+Jupyter Notebook (via Visual Studio Code)
 
 SQL (SQLite)
 
