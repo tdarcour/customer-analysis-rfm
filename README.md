@@ -84,6 +84,19 @@ Le fichier Power BI est disponible dans le dossier :
 
 powerbi/
 
+🧮 Analyse SQL
+
+Les données ont également été intégrées dans une base de données relationnelle (SQLite) afin de reproduire un contexte proche de celui rencontré en entreprise.
+
+Des requêtes SQL ont permis de :
+- calculer le chiffre d’affaires total
+- analyser le chiffre d’affaires par segment client
+- déterminer le nombre de clients par segment
+- calculer le panier moyen
+- identifier les 10 clients générant le plus de chiffre d’affaires
+
+Cette étape permet de valider les indicateurs métiers directement au niveau de la base de données.
+
 🛠️ Stack technique
 
 Python (pandas, numpy)
