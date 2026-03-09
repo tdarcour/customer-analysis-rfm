@@ -123,4 +123,39 @@ Les données ont été importées dans une base Azure SQL Database afin de repro
 Les analyses SQL ont permis de :
 - calculer le chiffre d’affaires total
 - analyser le chiffre d’affaires par segment client
-- déterminer le nombre de client
+- déterminer le nombre de clients par segment
+- calculer le panier moyen
+- identifier les clients générant le plus de chiffre d’affaires
+
+Les requêtes SQL sont disponibles dans le dossier sql/
+
+Cette étape permet de valider les indicateurs métiers directement au niveau de la base de données.
+
+🛠️ Stack technique
+
+Python (pandas, numpy)
+
+SQL
+
+Azure SQL Database
+
+Power BI
+
+Jupyter Notebook / Visual Studio Code 
+
+Git / GitHub
+
+🚀 Pistes d’amélioration
+
+Analyse temporelle plus détaillée (saisonnalité, évolution mensuelle)
+
+Ajout d’indicateurs de rétention client
+
+Intégration d’autres sources de données (marketing, géographie)
+
+Automatisation du pipeline avec Azure Data Factory ou Airflow
+
+👤 Auteur
+
+Projet réalisé par Tristan Darcourt-Germain
+Dans le cadre d’un parcours de montée en compétences en Data Analysis / Business Intelligence.
