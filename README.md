@@ -17,6 +17,22 @@ Identifier les segments de clients clés
 
 Visualiser les résultats via un dashboard Power BI
 
+⚙️ Data Pipeline
+
+Le projet suit un pipeline de données complet proche de ce qui est mis en place dans un environnement BI en entreprise :
+
+CSV transactionnels
+⬇️
+Python (pandas) - nettoyage et préparation des données
+⬇️
+Export de données agrégées
+⬇️
+Azure SQL Database - stockage des données
+⬇️
+SQL - analyses métier et validation des indicateurs
+⬇️
+Power BI - création du dashboard de visualisation
+
 🗂️ Données utilisées
 
 Les données proviennent d’un jeu de données transactionnelles clients et ont été agrégées pour obtenir :
@@ -58,7 +74,7 @@ Mise en évidence des segments les plus contributeurs au chiffre d’affaires.
 
 📈 Résultats clés
 
-Une minorité de clients génère la majorité du chiffre d’affaires (logique de Pareto).
+L'analyse met en évidence une forte concentration du chiffre d'affaires sur un nombre limité de clients : une minorité de clients génère la majorité du chiffre d’affaires (principe de Pareto 80/20).
 
 Les Top Clients représentent le segment le plus stratégique.
 
@@ -72,30 +88,46 @@ Cette analyse fournit une base décisionnelle exploitable pour orienter des acti
 
 Un dashboard Power BI a été réalisé pour faciliter la lecture métier :
 
-KPI :
+KPI principaux :
 
 Chiffre d’affaires total
 
 Nombre de clients
 
-Graphique :
+Nombre total de commandes
+
+Panier moyen
+
+Visualisations :
 
 Chiffre d’affaires par segment client
+
+Panier moyen par segment client
+
+Répartition des segments RFM
+
+Tableau des TOP 10 clients générant le plus de chiffre d'affaires
 
 Le fichier Power BI est disponible dans le dossier :
 
 powerbi/
 
+Aperçu du dashboard :
+
+![Dashboard](images/dashboard.png)
+
 🧮 Analyse SQL
 
-Les données ont également été intégrées dans une base de données relationnelle (SQLite) afin de reproduire un contexte proche de celui rencontré en entreprise.
+Les données ont été importées dans une base Azure SQL Database afin de reproduire un environnement proche d'une architecture BI réelle.
 
-Des requêtes SQL ont permis de :
+Les analyses SQL ont permis de :
 - calculer le chiffre d’affaires total
 - analyser le chiffre d’affaires par segment client
 - déterminer le nombre de clients par segment
 - calculer le panier moyen
-- identifier les 10 clients générant le plus de chiffre d’affaires
+- identifier les clients générant le plus de chiffre d’affaires
+
+Les requêtes SQL sont disponibles dans le dossier sql/
 
 Cette étape permet de valider les indicateurs métiers directement au niveau de la base de données.
 
@@ -103,11 +135,13 @@ Cette étape permet de valider les indicateurs métiers directement au niveau de
 
 Python (pandas, numpy)
 
-Jupyter Notebook (via Visual Studio Code)
+SQL
 
-SQL (SQLite)
+Azure SQL Database
 
-Power BI Desktop
+Power BI
+
+Jupyter Notebook / Visual Studio Code 
 
 Git / GitHub
 
@@ -119,7 +153,7 @@ Ajout d’indicateurs de rétention client
 
 Intégration d’autres sources de données (marketing, géographie)
 
-Automatisation du pipeline de données
+Automatisation du pipeline avec Azure Data Factory ou Airflow
 
 👤 Auteur
 
