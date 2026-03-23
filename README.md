@@ -1,11 +1,11 @@
-📊 Customer Analysis with RFM Segmentation
+## 📊 Customer Analysis with RFM Segmentation
 🧠 Contexte du projet
 
 Ce projet a pour objectif d’analyser le comportement des clients à partir de données transactionnelles afin de mieux comprendre la répartition du chiffre d’affaires, identifier les clients à forte valeur et mettre en évidence les clients à risque.
 
 L’analyse repose sur une segmentation RFM (Recency, Frequency, Monetary) et se termine par la création d’un dashboard Power BI destiné à une lecture métier.
 
-🎯 Objectifs
+## 🎯 Objectifs
 
 Analyser les données clients et transactions
 
@@ -17,7 +17,7 @@ Identifier les segments de clients clés
 
 Visualiser les résultats via un dashboard Power BI
 
-⚙️ Data Pipeline
+## ⚙️ Data Pipeline
 
 Le projet suit un pipeline de données complet proche de ce qui est mis en place dans un environnement BI en entreprise :
 
@@ -51,7 +51,7 @@ E --> F[Power BI Dashboard]
 F --> G[Business Insights]
 ```
 
-🗂️ Données utilisées
+## 🗂️ Données utilisées
 
 Les données proviennent d’un jeu de données transactionnelles clients et ont été agrégées pour obtenir :
 
@@ -65,7 +65,7 @@ customer_aggregates.csv
 
 rfm_clients.csv
 
-🔎 Démarche analytique
+## 🔎 Démarche analytique
 
 Le projet est structuré en plusieurs étapes, chacune documentée dans un notebook Jupyter :
 
@@ -78,7 +78,7 @@ Suppression des lignes non exploitables, correction des types de données, créa
 Analyse descriptive
 Calcul des indicateurs clés (chiffre d’affaires, nombre de clients, panier moyen, etc.).
 
-Segmentation RFM
+## Segmentation RFM
 
 Recency : nombre de jours depuis le dernier achat
 
@@ -90,7 +90,7 @@ Attribution de segments clients (Top Clients, Standard, Clients à risque).
 Synthèse et interprétation métier
 Mise en évidence des segments les plus contributeurs au chiffre d’affaires.
 
-📈 Résultats clés
+## 📈 Résultats clés
 
 L'analyse met en évidence une forte concentration du chiffre d'affaires sur un nombre limité de clients : une minorité de clients génère la majorité du chiffre d’affaires (principe de Pareto 80/20).
 
@@ -102,7 +102,7 @@ La segmentation RFM constitue une base pertinente pour des actions marketing cib
 
 Cette analyse fournit une base décisionnelle exploitable pour orienter des actions marketing, de fidélisation et d’optimisation de la valeur client.
 
-📊 Dashboard Power BI
+## 📊 Dashboard Power BI
 
 Un dashboard Power BI a été réalisé pour faciliter la lecture métier :
 
@@ -134,7 +134,7 @@ Aperçu du dashboard :
 
 ![Dashboard](images/dashboard.png)
 
-🧮 Analyse SQL
+## 🧮 Analyse SQL
 
 Les données ont été importées dans une base Azure SQL Database afin de reproduire un environnement proche d'une architecture BI réelle.
 
@@ -149,7 +149,7 @@ Les requêtes SQL sont disponibles dans le dossier sql/
 
 Cette étape permet de valider les indicateurs métiers directement au niveau de la base de données.
 
-🛠️ Stack technique
+## 🛠️ Stack technique
 
 Python (pandas, numpy)
 
@@ -163,7 +163,7 @@ Jupyter Notebook / Visual Studio Code
 
 Git / GitHub
 
-🚀 Pistes d’amélioration
+## 🚀 Pistes d’amélioration
 
 Analyse temporelle plus détaillée (saisonnalité, évolution mensuelle)
 
@@ -173,7 +173,7 @@ Intégration d’autres sources de données (marketing, géographie)
 
 Automatisation du pipeline avec Azure Data Factory ou Airflow
 
-👤 Auteur
+## 👤 Auteur
 
 Projet réalisé par Tristan Darcourt-Germain
 Dans le cadre d’un parcours de montée en compétences en Data Analysis / Business Intelligence.
