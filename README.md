@@ -33,6 +33,24 @@ SQL - analyses métier et validation des indicateurs
 ⬇️
 Power BI - création du dashboard de visualisation
 
+## 📐 Architecture du pipeline
+
+```mermaid
+flowchart LR
+
+A[Transactional CSV Data] --> B[Python Data Cleaning<br>pandas / numpy]
+
+B --> C[Aggregated Datasets<br>customer_aggregates.csv<br>rfm_clients.csv]
+
+C --> D[Azure SQL Database]
+
+D --> E[SQL Analysis<br>Segmentation / KPIs]
+
+E --> F[Power BI Dashboard]
+
+F --> G[Business Insights]
+```
+
 🗂️ Données utilisées
 
 Les données proviennent d’un jeu de données transactionnelles clients et ont été agrégées pour obtenir :
